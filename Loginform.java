@@ -35,8 +35,8 @@ public class Loginform {
         l2.setFont(new Font("Arial", Font.BOLD, 16));
                 JTextField t1 = new JTextField();
                 JPasswordField p1 = new JPasswordField();
-        t1.setForeground(Color.WHITE);
-        p1.setForeground(Color.WHITE);
+        t1.setForeground(Color.BLACK);
+        p1.setForeground(Color.BLACK);
 
         t1.setFont(new Font("Arial", Font.BOLD, 16));
         p1.setFont(new Font("Arial", Font.BOLD, 16));
@@ -66,7 +66,7 @@ public class Loginform {
                 String username = t1.getText();
                 String password = new String(p1.getPassword());
 
-                if (username.equals("Pawan") && password.equals("aakriti")) {
+                if (username.equals("Pawan") && password.equals("1234")) {
 
                     JOptionPane.showMessageDialog(frame, "Login Successful!");
                     frame.dispose();
@@ -180,7 +180,7 @@ public class Loginform {
              "2. Java is a ______ language?",
              "3. Which package is used for Swing?",
              "4. Which method starts Java program?",
-             "5. Who is sunil`s GirlFriend?"
+             "5. Java is developed by?"
      };
 
      String options[][] = {
@@ -188,7 +188,7 @@ public class Loginform {
              {"Compiled", "Interpreted", "Both", "None"},
              {"java.io", "java.util", "javax.swing", "java.net"},
              {"run()", "main()", "start()", "init()"},
-             {"Aakriti", "Priyanka", "Komal", "swastika"}
+             {"oracle", "Sun Microsystem", "James", "Apple"}
      };
 
      int answers[] = {2, 2, 2, 1, 1};

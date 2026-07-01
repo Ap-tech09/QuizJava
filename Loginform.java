@@ -74,13 +74,6 @@ public class Loginform {
                 } else {
                     JOptionPane.showMessageDialog(frame, "Invalid password!");
                 }
-
-
-
-
-
-
-
                 }
 
 });
@@ -95,6 +88,26 @@ public class Loginform {
         ButtonGroup bg;
 
         JButton next, submit;
+       String questions[] = {
+             "1. What is the 1st step of Swing?",
+             "2. Java is a ______ language?",
+             "3. Which package is used for Swing?",
+             "4. Which method starts Java program?",
+             "5. Java is developed by?"
+     };
+
+     String options[][] = {
+             {"Class", "Frame", "Botton", "LAbel"},
+             {"Compiled", "Interpreted", "Both", "None"},
+             {"java.io", "java.util", "javax.swing", "java.net"},
+             {"run()", "main()", "start()", "init()"},
+             {"oracle", "Sun Microsystem", "James", "Apple"}
+     };
+
+     int answers[] = {2, 2, 2, 1, 1};
+
+     int current = 0;
+     int score = 0;
 
         public QuizTime() {
             f=new JFrame("Quiz made by pawan");
@@ -175,26 +188,8 @@ public class Loginform {
 
 
         }
-     String questions[] = {
-             "1. What is the 1st step of Swing?",
-             "2. Java is a ______ language?",
-             "3. Which package is used for Swing?",
-             "4. Which method starts Java program?",
-             "5. Java is developed by?"
-     };
-
-     String options[][] = {
-             {"Class", "Frame", "Botton", "LAbel"},
-             {"Compiled", "Interpreted", "Both", "None"},
-             {"java.io", "java.util", "javax.swing", "java.net"},
-             {"run()", "main()", "start()", "init()"},
-             {"oracle", "Sun Microsystem", "James", "Apple"}
-     };
-
-     int answers[] = {2, 2, 2, 1, 1};
-
-     int current = 0;
-     int score = 0;void loadQuestion(int index) {
+   
+     void loadQuestion(int index) {
 
          question.setText(questions[index]);
 
